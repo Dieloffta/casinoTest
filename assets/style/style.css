@@ -1,0 +1,705 @@
+@font-face {
+  font-family: "Sports World";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Sports World"),
+       url('/assets/fonts/SportsWorld.otf')
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+.p {
+  color: aqua;
+  font-family: 'Roboto', sans-serif;
+}
+
+.pp {
+  font-family: 'Sports World', sans-serif;
+}
+
+/* HEADER */
+
+.header {
+  width: 100%;
+  max-width: 1920px;
+  height: 165px;
+  background-image: url('/assets/images/header.png');
+  background-color: black;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__logo {
+  width: 159px;
+  height: 165px;
+  background-color: white;
+  text-align: center;
+  padding-top: 14px;
+}
+
+.header__logo__font {
+  font-family: 'Sports World', sans-serif;
+  font-size: 40px;
+  line-height: 38px;
+}
+
+.header__logo__font.big {
+  font-size: 73px;
+  text-transform: uppercase;
+  line-height: 58px;
+}
+
+.header__navbar {
+  display: flex;
+  flex-direction: column;
+  margin-right: 160px;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.header__navbar__row {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  margin-top: 14px;
+}
+
+.header__navbar__socials {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 152px;
+}
+
+.header__svg {
+  width: 32px;
+  height: 32px;
+}
+
+.header__svg, .header__svg__search:hover {
+  cursor: pointer;
+}
+
+.header__svg__search {
+  width: 17px;
+  height: 17px;
+}
+
+.row__link {
+  color: #FFFFFF;
+  font-size: 19px;
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+  margin-right: 22px;
+}
+
+.row__link__y {
+  color: #F9E100;
+  font-size: 25px;
+  text-transform: uppercase;
+  font-family: 'Sports World', sans-serif;
+  margin-right: 26px;
+}
+
+.donate__button {
+  width: 150px;
+  height: 50px;
+  background-color: #4F46F6;
+  color: #FFFFFF;
+  font-family: 'Sports World', sans-serif;
+  font-size: 25px;
+  text-transform: uppercase;
+  border: none;
+  margin-left: auto;
+  transition: 0.3s;
+}
+
+.donate__button:hover {
+  transition: 0.3s;
+  background-color: #413ad3;
+  cursor: pointer;
+}
+
+.donate__button.yellow {
+  background-color: #F9E100;
+  color: black;
+}
+
+.donate__button.yellow:hover {
+  background-color: #e7d52e;
+}
+
+.introIMGM {
+  display: none;
+}
+
+.burgerMenu__img {
+  display: none;
+}
+
+@media screen and (max-width: 592px){
+  .header {
+    width: 100%;
+    max-width: 591px;
+    height: 75px;
+    background-image: url('/assets/images/headerM.png');
+  }
+
+  .header__container {
+    height: 75px;
+  }
+
+  .header__logo {
+    width: 96px;
+    height: 100px;
+    margin-left: 26px !important;
+    z-index: 15;
+  }
+
+  .header__logo__font {
+    font-size: 24px;
+    line-height: 21px;
+  }
+
+  .header__logo__font.big {
+    font-size: 44px;
+    line-height: 38px;
+  }
+
+  .header__navbar {
+    display: none;
+  }
+
+  .introIMG {
+    display: none;
+  }
+
+  .introIMGM {
+    display: block;
+    width: 100%;
+    max-width: 591px;
+    margin-bottom: 28px;
+  }
+
+  .burgerMenu__img {
+    display: block;
+    width: 40px;
+    height: 23px;
+    margin-top: 29px;
+    margin-right: 22px;
+  }
+
+  .burgerMenu__img:hover {
+    cursor: pointer;
+  }
+
+  .block__item {
+    position: absolute;
+    z-index: 23;
+    width: 210px;
+    height: 210px;
+    top: 10px;
+    left: 33%;
+  }
+}
+
+/* BODY */
+
+.body {
+  width: 100%;
+  max-width: 1496px;
+  margin: 0 auto;
+  margin-top: 42px;
+  margin-bottom: 82px;
+}
+
+@media screen and (max-width: 592px){
+  .body {
+    width: 100%;
+    max-width: 591px;
+    margin-top: 0;
+  }
+
+  .body__container {
+    flex-direction: column !important;
+  }
+
+  .row__block {
+    width: 100%;
+    max-width: 540px;
+    margin: 0 auto;
+  }
+
+  .row__block__title {
+    font-size: 32px !important;
+  }
+
+  .row__block__title.s {
+    font-size: 25px !important;
+  }
+
+  .row__block__title.xs {
+    font-size: 18px !important;
+  }
+
+  .row__block__img {
+    display: none;
+  }
+
+  .row__block__wIMG {
+    height: auto !important;
+  }
+
+  .row__block__titles__wrapper {
+    width: 100%;
+    max-width: 540px;
+  }
+
+  .row__block__imgM {
+    display: block !important;
+    width: 100%;
+    max-width: 540px;
+    height: 361px;
+  }
+
+  .news__button {
+    margin: 0 auto;
+    width: 350px !important;
+    height: 70px !important;
+    margin-bottom: 62px;
+  }
+
+  .row__form {
+    width: 100%;
+    max-width: 540px !important;
+    height: 538px !important;
+    margin-bottom: 62px !important;
+  }
+
+  .body__row.small {
+    max-width: 540px !important;
+    margin: 0 auto;
+  }
+
+  .form__info {
+    width: 100% !important;
+    max-width: 455px !important;
+  }
+
+  .form__input {
+    width: 100% !important;
+    max-width: 455px !important;
+    height: 45px !important;
+  }
+
+  .form__button {
+    width: 455px !important;
+    height: 55px !important;
+    text-align: center !important;
+    padding-left: 0 !important;
+  }
+
+  .form__title {
+    margin-top: 30px !important;
+    margin-bottom: 20px !important;
+  }
+
+  .form__suptitle {
+    margin-bottom: 16px !important;
+    font-size: 19px !important;
+  }
+
+  .donate__button {
+    margin: 0 auto;
+    width: 350px;
+    height: 70px;
+  }
+
+  .donate__button.yellow {
+    margin-bottom: 44px !important;
+  }
+}
+
+.body__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.body__row {
+  width: 100%;
+  max-width: 856px;
+  display: flex;
+  flex-direction: column;
+}
+
+.body__row.small {
+  max-width: 590px;
+}
+
+.introIMG {
+  width: 100%;
+  max-width: 856px;
+  margin-bottom: 28px;
+}
+
+.row__block {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 22px;
+}
+
+.row__block__wIMG {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 24px;
+  height: 230px;
+  margin-bottom: 42px;
+}
+
+.row__block__titles__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.row__block__title {
+  font-family: 'Sports World', sans-serif;
+  color: black;
+  font-size: 34px;
+  text-transform: uppercase;
+}
+
+.row__block__title.s {
+  font-size: 26px;
+}
+
+.row__block__title.xs {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.underscore {
+  border-bottom: 7px solid black;
+}
+
+.underscore__s {
+  border-bottom: 3px solid black;
+  margin-top: 12px;
+}
+
+.row__block__subtitle {
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  color: #505050;
+  margin-top: 14px;
+  line-height: 31px;
+  padding-bottom: 22px;
+}
+
+.row__block__subtitle.img {
+  width: 100%;
+  max-width: 485px;
+}
+
+.row__block__img {
+  width: 335px;
+  height: 230px;
+}
+
+.row__block__imgM {
+  display: none;
+}
+
+.row__block__socials {
+  margin-top: 12px;
+  display: flex;
+  justify-content: space-between;
+  width: 224px;
+}
+
+.row__block__SVG {
+  width: 62px;
+  height: 62px;
+}
+
+.row__block__SVG:hover {
+  cursor: pointer;
+}
+
+.row__form {
+  width: 100%;
+  height: 590px;
+  background-image: url('/assets/images/formBackground.png');
+  background-color: #000000;
+  margin-top: 22px;
+  margin-bottom: 32px;
+}
+
+.form__info {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+
+}
+
+.form__title {
+  font-family: 'Sports World', sans-serif;
+  font-size: 25px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  margin-top: 36px;
+  margin-bottom: 28px;
+}
+
+.form__suptitle {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  color: #FFFFFF;
+  margin-bottom: 28px;
+  line-height: 31px;
+}
+
+.form__input {
+  width: 500px;
+  height: 49px;
+  background-color: white;
+  color: #000000;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  padding-left: 20px;
+  margin-top: 12px;
+  border: none;
+}
+
+.form__input::placeholder {
+  color: #8A8A8A;
+}
+
+.form__input:focus {
+  outline: none;
+}
+
+.form__button {
+  width: 500px;
+  height: 60px;
+  font-size: 25px;
+  font-family: 'Sports World', sans-serif;
+  color: #000000;
+  background-color: #F9E100;
+  text-align: left;
+  border: none;
+  padding-left: 22px;
+  transition: 0.3s;
+}
+
+.form__button:hover {
+  cursor: pointer;
+  background-color: #e7d52e;
+  transition: 0.3s;
+}
+
+.news__button {
+  width: 286px;
+  height: 50px;
+  font-size: 25px;
+  font-family: 'Sports World', sans-serif;
+  color: #000000;
+  background-color: #F9E100;
+  border: none;
+  margin-left: auto;
+}
+
+.news__button:hover {
+  cursor: pointer;
+  background-color: #e7d52e;
+  transition: 0.3s;
+}
+
+.footer {
+  width: 100%;
+  max-width: 1920px;
+  height: 295px;
+  background-color: black;
+  background-image: url('/assets/images/footer.png');
+}
+
+@media screen and (max-width: 592px){
+  .footer{
+    width: 100%;
+    max-width: 591px;
+    height: 422px;
+    background-image: url('/assets/images/footerM.png');
+  }
+
+  .footer__container {
+    height: 422px !important;
+  }
+
+  .footer__links {
+    width: 100%;
+    max-width: 480px !important;
+    flex-wrap: wrap;
+    height: 80px;
+    margin-top: 32px !important;
+  }
+  
+  .footer__socials {
+    width: 200px !important;
+  }
+  
+  .footer__link {
+    font-size: 25px !important;
+    flex: 2 0 25%;
+    text-align: center;
+  }
+
+  .footer__socials__img {
+    width: 55px !important;
+    height: 55px !important;
+  }
+}
+
+.footer__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 295px;
+}
+
+.footer__logo {
+  width: 159px;
+  height: 165px;
+  background-color: white;
+  text-align: center;
+  padding-top: 14px;
+}
+
+.footer__logo__font {
+  font-family: 'Sports World', sans-serif;
+  font-size: 40px;
+  line-height: 38px;
+}
+
+.footer__logo__font.big {
+  font-size: 73px;
+  text-transform: uppercase;
+  line-height: 58px;
+}
+
+.footer__links {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 600px;
+  margin: 13px 0;
+}
+
+.footer__link {
+  font-size: 17px;
+  font-family: 'Roboto', sans-serif;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+
+.footer__socials {
+  display: flex;
+  justify-content: space-between;
+  width: 110px;
+}
+
+.footer__socials__img {
+  width: 32px;
+  height: 32px;
+}
+
+.footer__socials__img:hover {
+  cursor: pointer;
+}
+
+/* CHECKBOX */
+
+.firstcheck {
+  display: flex;
+  align-items: center;
+  margin-top: 9px;
+  margin-bottom: 32px;
+}
+
+.real_checkbox{
+  width: 0;
+  height: 0;
+  opacity: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.custom_checkbox{
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: none;
+  background-color: rgb(255, 255, 255);
+  vertical-align: sub;
+}
+
+.real_checkbox:checked + .custom_checkbox{
+  background-color: #F9E100;
+}
+
+.custom_checkbox:hover{
+  cursor: pointer;
+  transition: 1s;
+}
+
+.checkbox__text {
+  color: #FFFFFF;
+  font-size: 17px;
+  font-family: 'Roboto', sans-serif;
+  line-height: 31px;
+  margin-left: 16px;
+}
+
+/* SWIPER */
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  text-align: right;
+  padding-right: 12px;
+  padding-bottom: 6px;
+}
+
+ .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+   width: 15px;
+   height: 15px;
+}
+
+.swiper-pagination-bullet {
+  background-color: white !important;
+  opacity: 1 !important;
+}
+.swiper-pagination-bullet-active {
+  background-color: black !important;
+}
+
+@media screen and (max-width: 592px){
+  .swiper-pagination-bullet-active {
+    background-color: 
+    #F9E100 !important;
+  }
+  
+}
+
+.error {
+  border: 2.5px solid #af0909;
+}
